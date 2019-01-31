@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AccordionComponent } from '../accordion/accordion.component';
+import { PanelComponent } from '../panel/panel.component';
 
 @Component({
   selector: 'app-cdp',

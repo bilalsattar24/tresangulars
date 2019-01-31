@@ -40,4 +40,11 @@
             </div>
         </div>
     </div>
+    <app-accordion>
+        <app-panel *ngFor="let c of cities"
+          [title]="c.name" [opened]="c.opened" 
+          (toggle)="c.opened = !c.opened">{{c.desc}}
+        </app-panel>
+    </app-accordion>
+      
 </div>

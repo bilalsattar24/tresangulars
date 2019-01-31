@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cdp',
@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class CdpComponent implements OnInit {
 
   constructor() { }
-
+  @Input() role: string = "ROLE";
+  @Input() expectation = "EXPECTATION";
+  @Input() category = "CATEGORY";
+  @Input() summary = "SUMMARY";
+  @Input() number = "NUMBER";
   ngOnInit() {
   }
 

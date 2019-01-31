@@ -1,14 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <div class="row">
-    <div class="col-4">
-      <app-cdp></app-cdp>
-    </div>
-    <div class="col-4">
-      <app-cdp></app-cdp>
-    </div>
-    <div class="col-4">
-      <app-cdp></app-cdp>
+    
+    <div class="col-4" *ngFor = "let cdp of cdps">
+      <app-cdp [number]="cdp.number" [role]="cdp.role" [expectation]="cdp.expectation" [category]="cdp.category" [summary]="cdp.summary"></app-cdp>
     </div>
   </div>
 </div>

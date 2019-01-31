@@ -8,6 +8,9 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SearchComponent } from './search/search.component';
+import { SearchfilterComponent } from './searchfilter/searchfilter.component';
+import { EditcdpsComponent } from './editcdps/editcdps.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AccordionComponent,
     NavbarComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    SearchComponent,
+    SearchfilterComponent,
+    EditcdpsComponent
   ],
   imports: [
     BrowserModule,

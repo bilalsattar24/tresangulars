@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CDP Filter</h5>
+          <p>Use the filter to search for Fins by Role, Expectation, etc..</p>
+          <div class="btn-group mb-2">
+            <button id="cat1-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item px-2" value="Professional">Professional</li>
+              <li class="dropdown-item px-2" value="Architect">Architect</li>
+              <li class="dropdown-item px-2" value="Leader">Leader</li>
+              <li class="dropdown-item px-2" value="Player/Coach">Player/Coach</li>
+              <li class="dropdown-item px-2" value="Advisor">Advisor</li>
+            </ul>
+          </div> <br>
+          <div class="btn-group mb-2">
+            <button id="cat2-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select an Expectation<span class="caret"></span></button>
+            <ul id="cat2" class="dropdown-menu">
+            </ul>
+          </div> <br>
+          <div class="btn-group mb-2">
+            <button id="cat3-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a Category <span class="caret"></span></button>
+            <ul id="cat3" class="dropdown-menu">
+            </ul>
+          </div> <br>
+          <button id="filter-btn" href="#" class="btn btn-primary" onclick="findFins();" disabled>Find Fellow Fins!</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CDP Search</h5>
+          <p>Use the searchbar to search for Fins within a specific Category.</p>
+          <datalist id="cdpList" class=""></datalist>
+          <input name="searchbar" id="searchbar" type="text" class="form-control mb-1" placeholder="Search for Category..." list="cdpList">
+          <button id="search-btn" href="#" class="btn btn-primary" onclick="findFinsFromSearch();">Find Fellow Fins!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

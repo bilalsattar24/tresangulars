@@ -1,0 +1,88 @@
+<app-navbar></app-navbar>
+<div id="container" class="container card border-secondary mt-5 mb-3 p-3" style="max-width: 40rem">
+    <div class="row text-Black">
+        <div class="col-md-8 offset-sm-2 text-center">
+            <h1 class="display-4 mb-3">Edit CDPs</h1>
+            <div class="btn-group mb-2">
+              <button id="edit1-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item px-2" value="Professional">Professional</li>
+                <li class="dropdown-item px-2" value="Architect">Architect</li>
+                <li class="dropdown-item px-2" value="Leader">Leader</li>
+                <li class="dropdown-item px-2" value="Player/Coach">Player/Coach</li>
+                <li class="dropdown-item px-2" value="Advisor">Advisor</li>
+              </ul>
+            </div> <br>
+            <div class="btn-group mb-2">
+              <button id="edit2-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select an Expectation<span class="caret"></span></button>
+              <ul id="edit2" class="dropdown-menu">
+              </ul>
+            </div> <br>
+            <div class="btn-group mb-2">
+              <button id="edit3-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a Category <span class="caret"></span></button>
+              <ul id="edit3" class="dropdown-menu">
+              </ul>
+            </div> <br>
+            <div class="form-group">
+              <label for="comment">Copy/Paste your CDP in here:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+
+            <div id="block-2" class="hidden">
+              <div class="btn-group mb-2">
+                <button id="edit4-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item px-2" value="Professional">Professional</li>
+                  <li class="dropdown-item px-2" value="Architect">Architect</li>
+                  <li class="dropdown-item px-2" value="Leader">Leader</li>
+                  <li class="dropdown-item px-2" value="Player/Coach">Player/Coach</li>
+                  <li class="dropdown-item px-2" value="Advisor">Advisor</li>
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="edit5-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select an Expectation<span class="caret"></span></button>
+                <ul id="edit5" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="edit6-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a Category <span class="caret"></span></button>
+                <ul id="edit6" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <div class="form-group">
+                <label for="comment-2">Copy/Paste your CDP in here:</label>
+                <textarea class="form-control" rows="5" id="comment-2"></textarea>
+              </div>
+            </div>
+
+            <div id="block-3" class="hidden">
+              <div class="btn-group mb-2">
+                <button id="edit7-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#">Select a Role <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item px-2" value="Professional">Professional</li>
+                  <li class="dropdown-item px-2" value="Architect">Architect</li>
+                  <li class="dropdown-item px-2" value="Leader">Leader</li>
+                  <li class="dropdown-item px-2" value="Player/Coach">Player/Coach</li>
+                  <li class="dropdown-item px-2" value="Advisor">Advisor</li>
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="edit8-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select an Expectation<span class="caret"></span></button>
+                <ul id="edit8" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <div class="btn-group mb-2">
+                <button id="edit9-btn" class="btn border-secondary dropdown-toggle" data-toggle="dropdown" href="#" disabled>Select a Category <span class="caret"></span></button>
+                <ul id="edit9" class="dropdown-menu">
+                </ul>
+              </div> <br>
+              <div class="form-group">
+                <label for="comment-3">Copy/Paste your CDP in here:</label>
+                <textarea class="form-control" rows="5" id="comment-3"></textarea>
+              </div>
+            </div>
+            <input id="add" type="image" src="assets/images/plus.png" style="max-width: 3rem" onclick="add();"/><br>
+            <button type="submit" id="save-btn" href="dashboard.html" class="btn btn-primary" onclick="save();">Save</button>
+        </div>
+    </div>
+</div>

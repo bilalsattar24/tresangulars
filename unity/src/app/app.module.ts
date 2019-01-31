@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CdpComponent } from './cdp/cdp.component';
 import { AccordionComponent } from './accordion/accordion.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CdpComponent,
-    AccordionComponent
+    AccordionComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

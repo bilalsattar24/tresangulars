@@ -1,0 +1,6 @@
+export let dummyCDPS = [
+    {number: "1", role: "ARCHITECT", expectation: "Frameworks & Models", category: "System Components", summary: "As you progress through your career, it will become increasingly important to understand the pros and cons of various frameworks and models against their competitors. Pick a technical framework of your choice and demonstrate your ability to understand its nuances to your peers."},
+    {number: "2",role: "ADVISOR", expectation: "Connecting with People", category: "Business Networking", summary: "As a consultant, you must become comfortable interacting with new people both in and out of billable time. Seek to network within your market to better develop and practice your informal interactions. Consider starting with your fellow in-local-market fins, and expanding to technical meetups or community service groups of your interest."},
+    {number: "3",role: "LEADER", expectation: "Project Leadership", category: "Estimating", summary: "When working with a team, collaborative efforts often require individual team members to contribute within expected timeframes to avoid impacting the project timeline. Hone your ability to accurately estimate tasks within your current project or internal activities. This is a good candidate for a DROP plan if you so choose."},
+   
+]

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {dummyCDPS } from "./cdp/CDP";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'unity';
+  cdps = dummyCDPS;
 }

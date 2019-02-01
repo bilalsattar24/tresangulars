@@ -33,7 +33,9 @@
                         <div>{{fin.cohort}}</div>
                         <div>{{fin.market}}</div>
                         <div>{{fin.period}}</div>
-                        <div><a href="{{fin.slack}}"><i class="fab fa-slack"></i> Slack me!</a></div>
+                        <div>
+                            <a [href]="sanitize(fin.slack)"><i class="fab fa-slack"></i> Slack me!</a>
+                        </div>
                     </div>
                 </div>
             </app-accordion>

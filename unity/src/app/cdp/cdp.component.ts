@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {DomSanitizer} from '@angular/platform-browser';
 import { peopleData } from './peopleData';
 
 @Component({
@@ -8,7 +9,7 @@ import { peopleData } from './peopleData';
 })
 export class CdpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sanitizer : DomSanitizer) { }
   @Input() role: string = "ROLE";
   @Input() expectation = "EXPECTATION";
   @Input() category = "CATEGORY";
@@ -22,4 +23,7 @@ export class CdpComponent implements OnInit {
   onOpen(data: any) {
     this.selectedFin = data;
   }
+  sanitize(url:string){
+    return this.sanitizer.bypassSecurityTrustUrl(url);
+}
 }

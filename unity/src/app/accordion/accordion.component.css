@@ -5,3 +5,7 @@
 .accordion-body {
     background-color: white;
 }
+
+.hover-highlight:hover {
+    background-color: lightblue;
+}

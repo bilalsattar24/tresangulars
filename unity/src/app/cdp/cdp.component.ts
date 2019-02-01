@@ -15,9 +15,10 @@ export class CdpComponent implements OnInit {
   @Input() summary = "SUMMARY";
   @Input() number = "NUMBER";
   ngOnInit() {
+    this.fins = peopleData.filter((person) => person.cdp == this.number);
   }
   
-  fins = peopleData;
+  fins = peopleData.filter((person) => person.cdp == this.number);
   selectedFin = '';
   onOpen(data: any) {
     this.selectedFin = data;

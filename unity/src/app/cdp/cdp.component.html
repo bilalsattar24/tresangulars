@@ -17,12 +17,12 @@
         <button type="button" class="btn btn-outline-warning hundred-width">
             <i class="fas fa-comments"></i> Discussion
         </button>
-    </div>      
+    </div>
     <div class=fins>
         <div class="card-header text-center bg-secondary text-white fins-title">
             <h5 class="text-center">Paravida Fins</h5>
         </div>
-        
+
         <div *ngFor="let fin of fins" class="text-center">
             <app-accordion (opened)="onOpen($event)" [title]="fin.title" [data]="fin" [visible]="fin == selectedFin">
                 <div class="row">

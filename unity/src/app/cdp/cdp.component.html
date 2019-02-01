@@ -17,12 +17,26 @@
         <button type="button" class="btn btn-outline-warning hundred-width">
             <i class="fas fa-comments"></i> Discussion
         </button>
+    </div>      
+    <div class=fins>
+        <div class="card-header text-center bg-secondary text-white fins-title">
+            <h5 class="text-center">Paravida Fins</h5>
+        </div>
+        
+        <div *ngFor="let fin of fins" class="text-center">
+            <app-accordion (opened)="onOpen($event)" [title]="fin.title" [data]="fin" [visible]="fin == selectedFin">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{{fin.image}}" width="75" height="75" class="mt-2">
+                    </div>
+                    <div class="col-6">
+                        <div>{{fin.cohort}}</div>
+                        <div>{{fin.market}}</div>
+                        <div>{{fin.period}}</div>
+                        <div><a href="{{fin.slack}}"><i class="fab fa-slack"></i> Slack me!</a></div>
+                    </div>
+                </div>
+            </app-accordion>
+        </div>
     </div>
-    <!-- <app-accordion>
-        <app-panel *ngFor="let c of cities"
-          [title]="c.name" [opened]="c.opened" 
-          (toggle)="c.opened = !c.opened">{{c.desc}}
-        </app-panel>
-    </app-accordion> -->
-      
 </div>

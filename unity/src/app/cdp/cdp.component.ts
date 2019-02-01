@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AccordionComponent } from '../accordion/accordion.component';
-import { PanelComponent } from '../panel/panel.component';
+import { peopleData } from './peopleData';
 
 @Component({
   selector: 'app-cdp',
@@ -17,5 +16,10 @@ export class CdpComponent implements OnInit {
   @Input() number = "NUMBER";
   ngOnInit() {
   }
-
+  
+  fins = peopleData;
+  selectedFin = '';
+  onOpen(data: any) {
+    this.selectedFin = data;
+  }
 }

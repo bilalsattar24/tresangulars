@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CdpComponent } from './cdp/cdp.component';
-import { AccordionComponent } from './accordion/accordion.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SearchComponent } from './search/search.component';
 import { SearchfilterComponent } from './searchfilter/searchfilter.component';
 import { EditcdpsComponent } from './editcdps/editcdps.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { EditcdpsComponent } from './editcdps/editcdps.component';
     DashboardComponent,
     SearchComponent,
     SearchfilterComponent,
-    EditcdpsComponent
+    EditcdpsComponent,
+    AccordionComponent,
   ],
   imports: [
     BrowserModule,

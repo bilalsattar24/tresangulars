@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {dummyCDPS } from "../cdp/CDP";
+import { dummyCDPS } from "../cdp/CDP";
+
 
 @Component({
   selector: 'app-dashboard',
